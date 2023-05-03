@@ -7,13 +7,13 @@ namespace Variables
         static void Main(string[] args)
         {
             //Declare values
-            byte number = 2;
-            int count = 10;
-            float totalPrice = 20.95f;
-            char character = 'a';
-            string firstName = "Kevin";
-            bool isWorking = false;
-
+            var number = 2;
+            var count = 10;
+            var totalPrice = 20.95f;
+            var character = 'a';
+            var firstName = "Kevin";
+            var isWorking = false;
+            const float Pi = 3.14f;
             //Shortcut for Console.WriteLine: write cw and press Tab
             Console.WriteLine(number);
             Console.WriteLine(count);
@@ -21,8 +21,10 @@ namespace Variables
             Console.WriteLine(character);
             Console.WriteLine(firstName);
             Console.WriteLine(isWorking);
-
             //Run the app: Ctrl + F5
+
+            Console.WriteLine("{0} {1}", byte.MinValue, byte.MaxValue);
+
         }
     }
 }
